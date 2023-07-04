@@ -37,7 +37,7 @@ html {
 }
 
 .header {
-  padding-bottom: 15px;
+  padding-bottom: 50px;
 }
 
 .nav-links {
@@ -51,22 +51,23 @@ html {
   margin: 0 15px;
   color: var(--secondary);
   font-weight: normal;
+  font-size: medium;
 }
 
 .logo {
-  font-size: 2.8rem;
+  font-size: 3.8rem;
   font-weight: 900;
   font-family: 'Montserrat', sans-serif;
   color: var(--secondary);
   text-align: center;
-  padding: 20px;
+  padding-top: 30px;
   letter-spacing: 0.2em;
   max-width: 100%;
 }
 
 .description {
-  background-color: var(--earthy-brown);
-  color: var(--accent-gray);
+background-color: var(--secondary);
+color: rgb(37, 36, 36);
   font-family: var(--main-font-family);
   text-align: left;
   font-weight: bold;
@@ -74,12 +75,10 @@ html {
 
 .description-item {
   padding: 30px 0;
-  border: 1px solid red;
 }
 
 .description h1 {
   font-weight: bolder;
-  color: var(--accent-gray);
   font-size: 2.4rem;
   text-align: center;
 }
