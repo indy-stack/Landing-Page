@@ -25,7 +25,7 @@ html {
 }
 
 #wrapper{
-  min-width: 380px;
+  min-width: 448px;
   max-width: 768px;
   margin: 0 auto;
   
@@ -51,9 +51,11 @@ html {
 }
 
 .nav-links {
+  width: 80%;
   margin: 0 auto;
   display: flex;
-  justify-items: center;
+  align-items: center;
+  flex-wrap: nowrap;
   padding: 15px;
   font-size: 1.2rem;
 }
@@ -74,18 +76,11 @@ html {
   font-size: 2.9rem;
   font-weight: 900;
   font-family: 'Montserrat', sans-serif;
- 
-  
-  
-  
   margin: 0 auto;
   color: var(--secondary);
- 
    max-width: 80%;
-   
-   
-letter-spacing: 0.2em;
-overflow: hidden;
+  letter-spacing: 0.2em;
+  overflow: hidden;
 
 }
 
@@ -93,26 +88,28 @@ overflow: hidden;
 background-color: var(--background-white);
 color: var(--text-gray);
   font-family: var(--main-font-family);
-  text-align: left;
   font-weight: bold;
   padding: 20px 10px;
 }
 
-#description-item {
-  padding: 30px 0;
+.description-item, .facts ul li {
+  text-align: left;
+  padding-left: 5%;
 }
 
 #description h1 {
   font-weight: bolder;
+  max-width: 80%;
   font-size: 2.4rem;
-  text-align: center;
+  padding-bottom: 20px;
 }
 
 #description > p {
-  text-align: center;
   font-size: 1.4rem;
   line-height: 1.6;
   color: var(--text-gray);
+  max-width: 90%;
+  padding-bottom: 20px;
 }
 
 #description div ul {
@@ -122,7 +119,7 @@ color: var(--text-gray);
 #description div,
 .new-line {
   display: block;
-  text-align: center;
+  text-align: left;
   font-size: 1.4rem;
   padding: 1.2rem 0;
 }
@@ -169,7 +166,7 @@ color: var(--text-gray);
   flex-direction: column;
   gap: 30px;
   align-items: center;
-  padding: 30px 0;
+  padding: 40px 0;
   background-color: var(--primary-color);
 }
 
@@ -237,8 +234,7 @@ color: var(--text-gray);
 
 #news-update{
   background-color: var(--primary-color);
-  height: auto;
-  height: 350px;
+  height: 320px;
 }
 
 #news-update > .news-update-wrapper{
@@ -287,15 +283,14 @@ color: var(--text-gray);
 }
 
 #footer{
-  height: 500px;
+  height: fit-content;
   width: 100%;
   display: flex;
   flex-direction: column;
   gap: 20px;
   align-items: center;
   background-color: #000000;
-  padding-top:50px;
-  padding-bottom: 50px;
+  padding: 50px 0;
 }
 
 .footer-div h3{
@@ -340,9 +335,51 @@ color: var(--text-gray);
 
 /*Write a media query at 768px- Tablets & larger smartphones*/
 /*write a media query 769-1279-laptops, larger tablets and small desktops*/
-/*Write a media query for 1280+px*- larger desktops and monitors/
+@media screen and (min-width: 621px) and (max-width: 768px) {
+  .nav-links {
+    display: flex;
+    align-items: center;
+  }
 
+  .nav-link-item{
+    font-size: 1.6rem;
+    margin-right: 40px;
 
+  }
+
+  .logo a{
+    font-size: 3.5rem;
+    letter-spacing: 0.4em;
+  }
+
+  .description-item, .facts ul li {
+    text-align: left;
+    
+  }
+
+  #description h1 {
+    font-size: 2.8rem;
+  }
+
+  #description > p {
+    font-size: 1.4rem;
+  }
+
+  #description div ul {
+    font-size: 2rem;
+    display: flex;
+  }
+
+  .package-item {
+    width: 75%;
+  }
+
+}
+/*Write a media query for 1280+px*- larger desktops and monitors*/
+
+@media  screen and (min-width: 1280px) {
+  
+}
   
 
 
