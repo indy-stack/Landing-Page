@@ -1,11 +1,10 @@
 :root {
-  --primary-color: #264653; /* Deep teal */
-  --secondary: #f4a271; /* Coral */
-  --background-white: #ffffff;
+  --primary-color: #264653; 
+  --secondary: #f4a271;
+  --background-white: #f1ecec;
   --text-gray: #333333;
-  --accent-gray: #f1e8e8; /* For borders and accents */
+  --accent-gray: #F8F8F8; 
   --earthy-brown: #8d6e5f;
-  --earthy-tan: #d7c4b6;
   --main-font-family: Lato, sans-serif;
 }
 
@@ -25,7 +24,10 @@ html {
   font-size: 62.5%;
 }
 
-.header, .nav-links {
+#header, .nav-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   background-color: var(--primary-color);
 }
 
@@ -37,14 +39,15 @@ html {
   color: var(--accent-gray);
 }
 
-.header {
+#header {
   padding-bottom: 50px;
 }
 
 .nav-links {
+  margin: 0 auto;
   display: flex;
-  justify-content: center;
-  padding: 10px;
+  justify-items: center;
+  padding: 15px;
   font-size: 1.2rem;
 }
 
@@ -55,47 +58,61 @@ html {
   font-size: medium;
 }
 
-.logo {
-  font-size: 3.8rem;
-  font-weight: 900;
-  font-family: 'Montserrat', sans-serif;
-  color: var(--secondary);
+.logo  {
   text-align: center;
   padding-top: 30px;
-  letter-spacing: 0.2em;
-  max-width: 100%;
 }
 
-.description {
-background-color: var(--secondary);
+.logo a{
+  font-size: 2.9rem;
+  font-weight: 900;
+  font-family: 'Montserrat', sans-serif;
+ 
+  
+  
+  
+  margin: 0 auto;
+  color: var(--secondary);
+ 
+   max-width: 80%;
+   
+   
+letter-spacing: 0.2em;
+overflow: hidden;
+
+}
+
+#description {
+background-color: var(--background-white);
 color: var(--text-gray);
   font-family: var(--main-font-family);
   text-align: left;
   font-weight: bold;
+  padding: 20px 10px;
 }
 
-.description-item {
+#description-item {
   padding: 30px 0;
 }
 
-.description h1 {
+#description h1 {
   font-weight: bolder;
   font-size: 2.4rem;
   text-align: center;
 }
 
-.description > p {
+#description > p {
   text-align: center;
   font-size: 1.4rem;
   line-height: 1.6;
   color: var(--text-gray);
 }
 
-.description div ul {
+#description div ul {
   font-size: 1.8rem;
 }
 
-.description div,
+#description div,
 .new-line {
   display: block;
   text-align: center;
@@ -106,6 +123,7 @@ color: var(--text-gray);
 .hero {
   position: relative;
   display: inline;
+  background-color: var(--background-white);
 }
 
 .hero img {
@@ -135,7 +153,7 @@ color: var(--text-gray);
   margin: 30px auto;
 }
 
-.package {
+#package {
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -203,16 +221,16 @@ color: var(--text-gray);
 }
 
 .act-btn:hover{
-  background-color: var(--earthy-tan);
+  background-color: var(--accent-gray);
 }
 
-.news-update{
+#news-update{
   background-color: var(--primary-color);
   height: auto;
   height: 350px;
 }
 
-.news-update > .news-update-wrapper{
+#news-update > .news-update-wrapper{
   width: 50%;
   margin: 0 auto;
   padding-top: 50px;
@@ -254,21 +272,64 @@ color: var(--text-gray);
 
 .news-update-wrapper #subscribe-button:hover{
   background-color: var(--accent-gray);
+  cursor: pointer;
 }
 
-.footer{
-  height: fit-content;
+#footer{
+  height: 500px;
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 20px;
   align-items: center;
+  background-color: #000000;
+  padding-top:50px;
+  padding-bottom: 50px;
 }
 
-.footer .footer-div{
-  padding: 10px;
+.footer-div h3{
+  color: var(--accent-gray);
+  font-size: 1.2rem;
+  
 }
 
+.footer-div ul > *, .footer-div h3{
+  padding-bottom: 15px;
+}
+
+.footer-div > ul> li > a {
+  color: var(--secondary);
+  font-size: 1rem;
+  transition: color 0.3s ease-in;
+}
+
+.footer-div > ul> li > a:hover{
+  color: var(--accent-gray);
+}
+
+#copyright{
+  color: var(--accent-gray);
+}
+
+#social-media{
+  display: flex;
+  gap: 30px;
+}
+
+#social-media a{
+  align-content: center;
+  font-size: 1.2rem;
+  color: var(--accent-gray);
+  transition: color 0.3s ease-in;
+}
+
+#social-media a:hover{
+  color: var(--secondary);
+}
+
+/*Write a media query at 768px- Tablets & larger smartphones*/
+/*write a media query 769-1279-laptops, larger tablets and small desktops*/
+/*Write a media query for 1280+px*- larger desktops and monitors/
 
 
   

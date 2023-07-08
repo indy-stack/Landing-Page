@@ -6,8 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TrashTrackers - Landing page</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,900&family=Roboto:wght@100;300;400;500;900&family=Sen:wght@400;700;800&display=swap"
         rel="stylesheet">
@@ -19,23 +17,22 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-
 <body>
-    <header class="header">
+    <header id="header">
         <nav class="nav-links">
             <ul>
-                <a href="" class="nav-link-item">Home</a>
-                <a href="" class="nav-link-item">Services</a>
-                <a href="" class="nav-link-item">About</a>
-                <a href="" class="nav-link-item">Contact</a>
+                <a href="#header" class="nav-link-item">Home</a>
+                <a href="#package" class="nav-link-item">Services</a>
+                <a href="#" class="nav-link-item">About</a>
+                <a href="#" class="nav-link-item">Contact</a>
             </ul>
         </nav>
-        <a href="#home">
-            <div class="logo">TRASHTRACKERS</div>
-        </a>
+       
+            <div class="logo"><a href="#home">TRASHTRACKERS</a></div>
+        
     </header>
     <main>
-        <section class="description">
+        <section id="description">
             <h1 class="description-item">A Cleaner World Through Technology!</h1>
             <p class="description-item">We can't stand messy neighborhoods and overstuffed<br>
                 trash cans.That's why we've launched TrashTrackers,
@@ -45,7 +42,7 @@
             </p>
             <div class="facts description-item">
                 <ul>
-                    <li>100 <span class="new-line">Service Areas</span></li>
+                    <li>100 <span class="new-line">Serviced Areas</span></li>
                     <li>24 <span class="new-line">Hours Online</span></li>
                     <li>365 <span class="new-line">Days Available</span></li>
                 </ul>
@@ -66,7 +63,7 @@
                     allowfullscreen></iframe></div>
 
         </section>
-        <section class="package">
+        <section id="package">
             <div id="package-1" class=" package-item">
                 <div class="package-wrapper">
                     <h2 class="package-name">Basic Package</h2>
@@ -109,7 +106,7 @@
                 </div>
             </div>
         </section>
-        <section class="news-update">
+        <section id="news-update">
             <div class="news-update-wrapper">
                 <h1>Subscribe!</h1>
                 <p>Be the first to receive the news <br>
@@ -118,43 +115,41 @@
                 <button id="subscribe-button">Subscribe</button>
             </div>
         </section>
-        <footer class="footer">
+    </main>
+    <footer id="footer">
             <div class="footer-div" id="services">
                 <h3>Services</h3>
                 <ul>
-                    <li><a href="">Residencial</a></li>
-                    <li><a href="">Commercial</a></li>
-                    <li><a href="">On-Demand</a></li>
+                    <li><a href="#package-1">Residencial</a></li>
+                    <li><a href="#package-2">Commercial</a></li>
+                    <li><a href="#package-3">On-Demand</a></li>
                 </ul>
             </div>
             <div class="footer-div" id="Support">
                 <h3>Support</h3>
                 <ul>
-                    <li><a href="">FAQ</a></li>
-                    <li><a href="">Contact</a></li>
-                    <li><a href="">Pricing</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#package">Pricing</a></li>
                 </ul>
             </div>
             <div class="footer-div" id="company">
                 <h3>Company</h3>
                 <ul>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Careers</a></li>
-                    <li><a href="">Blog</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Blog</a></li>
                 </ul>
             </div>
-            <div id="copyright">
+            <div id="copyright" class="footer-div">
                 &copy; TrashTrackers 2023
             </div>
-            <div id="social-media">
-                <i class="fa-brands fa-twitter"></i>
-                <i class="fa-brands fa-instagram"></i>
-                <i class="fa-brands fa-facebook-f"></i>
+            <div class="footer-div" id="social-media">
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
             </div>
-        </footer>
-
-    </main>
-
+    </footer>
 
 </body>
 
