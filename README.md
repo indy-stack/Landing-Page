@@ -1,4 +1,4 @@
-# Landing-Page
+# TRASHTRACKERS Landing-Page
  The purpose of this project is to learn and practive responsive web design. This is a website in progress
  I'm making as part of the FreeCodeCamp certification for responsive web design.
  The website is a simple static site (just the frontend) for a nonexisting trash pickup bussiness.
