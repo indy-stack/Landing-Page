@@ -1,10 +1,9 @@
 :root {
-  --primary-color: #264653; 
+  --primary-color: #264653;
   --secondary: #f4a271;
   --background-white: #f1ecec;
   --text-gray: #333333;
-  --accent-gray: #F8F8F8; 
-  --earthy-brown: #8d6e5f;
+  --accent-gray: #F8F8F8;
   --main-font-family: Lato, sans-serif;
 }
 
@@ -18,31 +17,32 @@
 
 body {
   font-family: var(--main-font-family);
+  background: linear-gradient(50deg, var(--secondary), var(--primary-color));
+
 }
 
 html {
   font-size: 62.5%;
 }
 
-#wrapper{
-  min-width: 448px;
-  max-width: 768px;
+.wrapper {
+  max-width: 960px;
   margin: 0 auto;
-  
 }
 
-#header, .nav-links {
+#header,
+.nav-links {
   display: flex;
   flex-direction: column;
   justify-content: center;
   background-color: var(--primary-color);
 }
 
-.nav-links > ul > a{
+.nav-links>ul>a {
   transition: color 0.3s ease-in;
 }
 
-.nav-links > ul > a:hover {
+.nav-links>ul>a:hover {
   color: var(--accent-gray);
 }
 
@@ -67,61 +67,71 @@ html {
   font-size: medium;
 }
 
-.logo  {
+.logo {
   text-align: center;
   padding-top: 30px;
 }
 
-.logo a{
+.logo a {
   font-size: 2.9rem;
   font-weight: 900;
   font-family: 'Montserrat', sans-serif;
   margin: 0 auto;
   color: var(--secondary);
-   max-width: 80%;
+  max-width: 80%;
   letter-spacing: 0.2em;
   overflow: hidden;
 
 }
 
 #description {
-background-color: var(--background-white);
-color: var(--text-gray);
+  background-color: var(--background-white);
+  color: var(--text-gray);
   font-family: var(--main-font-family);
   font-weight: bold;
   padding: 20px 10px;
 }
 
-.description-item, .facts ul li {
-  text-align: left;
-  padding-left: 5%;
+.desc-wrapper {
+  width: fit-content;
+  margin: 0 auto;
 }
 
-#description h1 {
-  font-weight: bolder;
+.description-item {
+  text-align: left;
+  padding-left: 0;
+  margin: 0 auto;
   max-width: 80%;
+}
+
+.desc-wrapper h1 {
+  font-weight: bolder;
   font-size: 2.4rem;
   padding-bottom: 20px;
+  text-align: center;
 }
 
-#description > p {
+.desc-wrapper>p {
   font-size: 1.4rem;
   line-height: 1.6;
   color: var(--text-gray);
-  max-width: 90%;
-  padding-bottom: 20px;
+  text-align: center;
+  max-width: 80%;
 }
 
-#description div ul {
+.desc-wrapper div ul {
   font-size: 1.8rem;
+  text-align: center;
 }
 
-#description div,
+.desc-wrapper div,
 .new-line {
   display: block;
   text-align: left;
   font-size: 1.4rem;
   padding: 1.2rem 0;
+  text-align: center;
+
 }
 
 .hero {
@@ -132,6 +142,7 @@ color: var(--text-gray);
 
 .hero img {
   width: 100%;
+  max-width: 100%;
   height: auto;
   margin: 0;
 }
@@ -142,6 +153,7 @@ color: var(--text-gray);
   left: 0;
   width: 100%;
   height: 100%;
+  max-width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -152,10 +164,11 @@ color: var(--text-gray);
   letter-spacing: 0.2rem;
 }
 
-.video-psa{
+.video-psa {
   background-color: var(--background-white);
 }
-.video-psa .video-wrapper{
+
+.video-psa .video-wrapper {
   width: 80%;
   margin: 0 auto;
   padding: 30px 0;
@@ -182,34 +195,32 @@ color: var(--text-gray);
   text-align: left;
 }
 
-.package-item > .package-name {
+.package-item>.package-name {
   font-size: 1.8rem;
 }
 
-.package-wrapper > .price{
+.package-wrapper>.price {
   font-size: 2.1rem;
   color: var(--secondary);
   text-align: left;
 }
 
-.package-wrapper > * {
+.package-wrapper>* {
   padding: 15px;
- 
+
 }
 
-.package-item >  .package-wrapper > * {
+.package-item>.package-wrapper>* {
   margin: 0 auto;
 }
 
 .package-item ul li {
-    list-style: none;
-    font-size: 1.2rem;
-    padding: 5px 0;
-    
-    
+  list-style: none;
+  font-size: 1.2rem;
+  padding: 5px 0;
 }
 
-.package-item ul li::before{
+.package-item ul li::before {
   content: "\2713";
   margin-right: 5px;
 
@@ -225,39 +236,40 @@ color: var(--text-gray);
   text-align: center;
   cursor: pointer;
   transition: background-color 0.3s ease-in;
-  
+
 }
 
-.act-btn:hover{
+.act-btn:hover {
   background-color: var(--accent-gray);
 }
 
-#news-update{
+#news-update {
   background-color: var(--primary-color);
   height: 320px;
 }
 
-#news-update > .news-update-wrapper{
+#news-update>.news-update-wrapper {
   width: 50%;
   margin: 0 auto;
   padding-top: 50px;
 }
 
-.news-update-wrapper h1, p{
+.news-update-wrapper h1,
+p {
   text-align: center;
   color: var(--accent-gray);
 }
 
-.news-update-wrapper h1{
+.news-update-wrapper h1 {
   font-size: 2.4rem;
 }
 
-.news-update-wrapper  p{
+.news-update-wrapper p {
   font-size: small;
   padding: 15px 0;
 }
 
-.news-update-wrapper input{
+.news-update-wrapper input {
   display: block;
   text-align: left;
   margin: 0 auto;
@@ -265,8 +277,8 @@ color: var(--text-gray);
   padding: 5px;
   width: fit-content;
 }
- 
-.news-update-wrapper #subscribe-button{
+
+.news-update-wrapper #subscribe-button {
   display: block;
   margin: 0 auto;
   margin-top: 20px;
@@ -277,12 +289,12 @@ color: var(--text-gray);
   transition: background-color 0.3s ease-out;
 }
 
-.news-update-wrapper #subscribe-button:hover{
+.news-update-wrapper #subscribe-button:hover {
   background-color: var(--accent-gray);
   cursor: pointer;
 }
 
-#footer{
+#footer {
   height: fit-content;
   width: 100%;
   display: flex;
@@ -293,98 +305,182 @@ color: var(--text-gray);
   padding: 50px 0;
 }
 
-.footer-div h3{
+.footer-div h3 {
   color: var(--accent-gray);
   font-size: 1.2rem;
-  
+
 }
 
-.footer-div ul > *, .footer-div h3{
+.footer-div ul>*,
+.footer-div h3 {
   padding-bottom: 15px;
 }
 
-.footer-div > ul> li > a {
+.footer-div>ul>li>a {
   color: var(--secondary);
   font-size: 1rem;
   transition: color 0.3s ease-in;
 }
 
-.footer-div > ul> li > a:hover{
+.footer-div>ul>li>a:hover {
   color: var(--accent-gray);
 }
 
-#copyright{
+#copyright {
   color: var(--accent-gray);
 }
 
-#social-media{
+#social-media {
   display: flex;
   gap: 30px;
 }
 
-#social-media a{
+#social-media a {
   align-content: center;
   font-size: 1.2rem;
   color: var(--accent-gray);
   transition: color 0.3s ease-in;
 }
 
-#social-media a:hover{
+#social-media a:hover {
   color: var(--secondary);
 }
 
 /*Write a media query at 768px- Tablets & larger smartphones*/
 /*write a media query 769-1279-laptops, larger tablets and small desktops*/
-@media screen and (min-width: 621px) and (max-width: 768px) {
+@media screen and (min-width: 769px) and (max-width: 1279px) {
+
   .nav-links {
     display: flex;
     align-items: center;
   }
 
-  .nav-link-item{
+  .nav-link-item {
     font-size: 1.6rem;
     margin-right: 40px;
 
   }
 
-  .logo a{
+  .logo a {
     font-size: 3.5rem;
     letter-spacing: 0.4em;
   }
 
-  .description-item, .facts ul li {
+  .desc-wrapper-item,
+  .facts ul li {
     text-align: left;
-    
+
   }
 
-  #description h1 {
+  .desc-wrapper h1 {
     font-size: 2.8rem;
   }
 
-  #description > p {
+  .desc-wrapper>p {
     font-size: 1.4rem;
   }
 
-  #description div ul {
+  .facts ul {
     font-size: 2rem;
     display: flex;
+    padding-top: 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
   }
 
   .package-item {
     width: 75%;
   }
 
+  .hero .overlay {
+    font-size: 2.8rem;
+    letter-spacing: 0.4rem;
+  }
+
+  .video-psa .video-wrapper {
+    width: 70%;
+  }
+
+  #footer {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #footer .footer-div {
+    margin: 0 auto;
+  }
+
+
 }
+
 /*Write a media query for 1280+px*- larger desktops and monitors*/
 
-@media  screen and (min-width: 1280px) {
-  
+@media screen and (min-width: 1280px) {
+
+  .wrapper {
+    max-width: 1280px;
+  }
+
+  .nav-link-item {
+    font-size: 1.8rem;
+    margin-right: 60px;
+
+  }
+
+  .logo a {
+    font-size: 3.8rem;
+    letter-spacing: 0.6em;
+  }
+
+  .desc-wrapper-item,
+  .facts ul li {
+    text-align: left;
+  }
+
+  .desc-wrapper h1 {
+    font-size: 3rem;
+  }
+
+  .desc-wrapper>p {
+    font-size: 1.6rem;
+  }
+
+  .facts ul {
+    font-size: 2rem;
+    display: flex;
+    padding-top: 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .hero .overlay {
+    font-size: 3.2rem;
+    letter-spacing: 0.6rem;
+  }
+
+  iframe {
+    height: 450px;
+  }
+
+  #package {
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+  }
+
+  .package-item {
+    flex: 1 1 300px;
+    margin: 5px;
+  }
+
+  #footer {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #footer .footer-div {
+    margin: 0 auto;
+  }
 }
-  
-
-
-
-
-
-
-
