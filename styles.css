@@ -31,18 +31,24 @@ html {
 }
 
 #header,
-.nav-links {
+.nav-links{
   display: flex;
   flex-direction: column;
   justify-content: center;
   background-color: var(--primary-color);
 }
 
-.nav-links>ul>a {
+.nav-links ul{
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.nav-links> ul > li > a {
   transition: color 0.3s ease-in;
 }
 
-.nav-links>ul>a:hover {
+.nav-links>ul> li >a:hover {
   color: var(--accent-gray);
 }
 
@@ -166,6 +172,14 @@ html {
 
 .video-psa {
   background-color: var(--background-white);
+}
+
+#video {
+  width: 100%;
+}
+
+iframe {
+  border: 0;
 }
 
 .video-psa .video-wrapper {
