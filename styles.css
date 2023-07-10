@@ -18,7 +18,6 @@
 body {
   font-family: var(--main-font-family);
   background: linear-gradient(50deg, var(--secondary), var(--primary-color));
-
 }
 
 html {
@@ -81,7 +80,6 @@ html {
   max-width: 80%;
   letter-spacing: 0.2em;
   overflow: hidden;
-
 }
 
 #description {
@@ -131,7 +129,6 @@ html {
   font-size: 1.4rem;
   padding: 1.2rem 0;
   text-align: center;
-
 }
 
 .hero {
@@ -207,7 +204,6 @@ html {
 
 .package-wrapper>* {
   padding: 15px;
-
 }
 
 .package-item>.package-wrapper>* {
@@ -223,7 +219,6 @@ html {
 .package-item ul li::before {
   content: "\2713";
   margin-right: 5px;
-
 }
 
 .act-btn {
@@ -236,7 +231,6 @@ html {
   text-align: center;
   cursor: pointer;
   transition: background-color 0.3s ease-in;
-
 }
 
 .act-btn:hover {
@@ -308,7 +302,6 @@ p {
 .footer-div h3 {
   color: var(--accent-gray);
   font-size: 1.2rem;
-
 }
 
 .footer-div ul>*,
@@ -346,7 +339,6 @@ p {
   color: var(--secondary);
 }
 
-/*Write a media query at 768px- Tablets & larger smartphones*/
 /*write a media query 769-1279-laptops, larger tablets and small desktops*/
 @media screen and (min-width: 769px) and (max-width: 1279px) {
 
@@ -358,7 +350,6 @@ p {
   .nav-link-item {
     font-size: 1.6rem;
     margin-right: 40px;
-
   }
 
   .logo a {
@@ -369,7 +360,6 @@ p {
   .desc-wrapper-item,
   .facts ul li {
     text-align: left;
-
   }
 
   .desc-wrapper h1 {
@@ -410,8 +400,6 @@ p {
   #footer .footer-div {
     margin: 0 auto;
   }
-
-
 }
 
 /*Write a media query for 1280+px*- larger desktops and monitors*/
@@ -425,7 +413,6 @@ p {
   .nav-link-item {
     font-size: 1.8rem;
     margin-right: 60px;
-
   }
 
   .logo a {
