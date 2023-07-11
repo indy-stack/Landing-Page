@@ -29,43 +29,17 @@ html {
   margin: 0 auto;
 }
 
-#header,
-#nav-bar{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-color: var(--primary-color);
-}
-
-#nav-bar ul{
-  display: flex;
-  justify-content: space-between;
-  padding: 0;
-}
-
-#nav-bar> ul > li > a {
-  transition: color 0.3s ease-in;
-}
-
-#nav-bar>ul> li >a:hover {
-  color: var(--accent-gray);
-}
-
-#header {
-  padding-bottom: 50px;
-  position: sticky;
-  top: 0;
-  z-index: 9999;
-}
-
 #nav-bar {
-  width: 80%;
-  margin: 0 auto;
+  width: 100%;
   display: flex;
+  justify-content: center;
   align-items: center;
-  flex-wrap: nowrap;
   padding: 10px;
   font-size: 1.2rem;
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+  background-color: var(--primary-color);
 }
 
 .nav-link {
@@ -75,9 +49,39 @@ html {
   font-size: medium;
 }
 
+
+#nav-bar ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+#nav-bar> ul > li{
+  margin: 10px 0;
+}
+
+#nav-bar> ul > li > a {
+  transition: color 0.3s ease-in;
+  color: var(--secondary);
+  font-weight: normal;
+  font-size: medium;
+}
+
+#nav-bar>ul> li >a:hover {
+  color: var(--accent-gray);
+}
+
+#header {
+  padding-bottom: 50px;
+  background-color: var(--primary-color);
+  
+}
+
 .logo {
   text-align: center;
-  padding-top: 30px;
+  padding-top: 80px;
 }
 
 .logo a {
@@ -88,11 +92,11 @@ html {
   color: var(--secondary);
   max-width: 80%;
   letter-spacing: 0.2em;
-  overflow: hidden;
+  /*overflow: hidden;*/
 }
 
 #header-img {
-  display: inline;
+  display: block;
   filter: invert(85%);
   width: 50px;
   margin: 0 auto;
@@ -371,9 +375,17 @@ input[type="submit"]:hover {
 /*write a media query 769-1279-laptops, larger tablets and small desktops*/
 @media screen and (min-width: 769px) and (max-width: 1279px) {
 
+  /*.wrapper {
+    padding-top: 10px;
+  }*/
+
   #nav-bar {
     display: flex;
     align-items: center;
+    width: 100%;
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .nav-link {
@@ -381,6 +393,9 @@ input[type="submit"]:hover {
     margin-right: 40px;
   }
 
+  .logo{
+    padding-top: 100px;
+  }
   .logo a {
     font-size: 3.5rem;
     letter-spacing: 0.4em;
@@ -439,6 +454,13 @@ input[type="submit"]:hover {
     max-width: 1280px;
   }
 
+  #nav-bar {
+    width: 100%;
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
   .nav-link {
     font-size: 1.8rem;
     margin-right: 60px;
