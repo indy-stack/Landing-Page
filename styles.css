@@ -30,32 +30,35 @@ html {
 }
 
 #header,
-.nav-links{
+#nav-bar{
   display: flex;
   flex-direction: column;
   justify-content: center;
   background-color: var(--primary-color);
 }
 
-.nav-links ul{
+#nav-bar ul{
   display: flex;
   justify-content: space-between;
   padding: 0;
 }
 
-.nav-links> ul > li > a {
+#nav-bar> ul > li > a {
   transition: color 0.3s ease-in;
 }
 
-.nav-links>ul> li >a:hover {
+#nav-bar>ul> li >a:hover {
   color: var(--accent-gray);
 }
 
 #header {
   padding-bottom: 50px;
+  position: sticky;
+  top: 0;
+  z-index: 9999;
 }
 
-.nav-links {
+#nav-bar {
   width: 80%;
   margin: 0 auto;
   display: flex;
@@ -65,7 +68,7 @@ html {
   font-size: 1.2rem;
 }
 
-.nav-link-item {
+.nav-link {
   margin: 0 10px;
   color: var(--secondary);
   font-weight: normal;
@@ -86,6 +89,14 @@ html {
   max-width: 80%;
   letter-spacing: 0.2em;
   overflow: hidden;
+}
+
+#header-img {
+  display: inline;
+  filter: invert(85%);
+  width: 50px;
+  margin: 0 auto;
+  padding-top: 20px ;
 }
 
 #description {
@@ -280,17 +291,17 @@ p {
   padding: 15px 0;
 }
 
-.news-update-wrapper input {
+input[type="email"] {
   display: block;
   text-align: left;
   margin: 0 auto;
   background-color: var(--accent-gray);
   padding: 5px;
   width: fit-content;
-  color: var(--text-gray) !important;
+  color: var(--text-gray);
 }
 
-.news-update-wrapper #subscribe-button {
+input[type="submit"] {
   display: block;
   margin: 0 auto;
   margin-top: 20px;
@@ -301,7 +312,7 @@ p {
   transition: background-color 0.3s ease-out;
 }
 
-.news-update-wrapper #subscribe-button:hover {
+input[type="submit"]:hover {
   background-color: var(--accent-gray);
   cursor: pointer;
 }
@@ -360,12 +371,12 @@ p {
 /*write a media query 769-1279-laptops, larger tablets and small desktops*/
 @media screen and (min-width: 769px) and (max-width: 1279px) {
 
-  .nav-links {
+  #nav-bar {
     display: flex;
     align-items: center;
   }
 
-  .nav-link-item {
+  .nav-link {
     font-size: 1.6rem;
     margin-right: 40px;
   }
@@ -428,7 +439,7 @@ p {
     max-width: 1280px;
   }
 
-  .nav-link-item {
+  .nav-link {
     font-size: 1.8rem;
     margin-right: 60px;
   }

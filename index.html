@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TrashTrackers - Landing page</title>
-    <meta name="description" content="TrashTrackers - A Cleaner World Through Technology! Your one-stop solution for all your trash removal needs. Get affordable trash removal services for residential and commercial properties. Contact us today for a cleaner and greener environment.">
+    <meta name="description"
+        content="TrashTrackers - A Cleaner World Through Technology! Your one-stop solution for all your trash removal needs. Get affordable trash removal services for residential and commercial properties. Contact us today for a cleaner and greener environment.">
     <link rel="stylesheet" href="styles.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,900&family=Roboto:wght@100;300;400;500;900&family=Sen:wght@400;700;800&display=swap"
@@ -23,16 +24,17 @@
 <body>
     <div class="wrapper">
         <header id="header">
-            <nav class="nav-links">
+            <nav id="nav-bar">
                 <ul>
-                    <li><a href="#header" class="nav-link-item">Home</a></li>
-                    <li><a href="#package" class="nav-link-item">Services</a></li>
-                    <li><a href="#" class="nav-link-item">About</a></li>
-                    <li><a href="#" class="nav-link-item">Contact</a></li>
+                    <li><a href="#header" class="nav-link">Home</a></li>
+                    <li><a href="#package" class="nav-link">Services</a></li>
+                    <li><a href="#footer" class="nav-link">About</a></li>
+                    <li><a href="#company" class="nav-link">Contact</a></li>
                 </ul>
             </nav>
 
             <div class="logo"><a href="#home">TRASHTRACKERS</a></div>
+            <img id="header-img" src="./images/header-img.png" alt="trash truck">
 
         </header>
         <main>
@@ -53,7 +55,7 @@
                         </ul>
                     </div>
                 </div>
-                    
+
             </section>
             <div class="hero">
                 <div class="photo-wrapper">
@@ -68,7 +70,7 @@
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         allowfullscreen></iframe></div>
 
-                </div>
+            </div>
             <div id="package">
                 <div id="package-1" class=" package-item">
                     <div class="package-wrapper">
@@ -112,15 +114,17 @@
                     </div>
                 </div>
             </div>
-            <section id="news-update">
+            <div id="news-update">
                 <div class="news-update-wrapper">
                     <h1>Subscribe!</h1>
                     <p>Be the first to receive the news <br>
                         of our latest serviced areas and upcoming events</p>
-                    <input type="email" id="subscribe-email" placeholder="Enter your email address">
-                    <button id="subscribe-button">Subscribe</button>
+                    <form id="form" action="https://www.freecodecamp.com/email-submit">
+                        <input type="email" id="email" name="email" placeholder="Enter your email address">
+                        <input type="submit" id="submit" value="Subscribe">
+                    </form>
                 </div>
-            </section>
+            </div>
         </main>
         <footer id="footer">
             <div class="footer-div" id="services">
@@ -134,8 +138,8 @@
             <div class="footer-div" id="Support">
                 <h3>Support</h3>
                 <ul>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#footer">FAQ</a></li>
+                    <li><a href="#footer">Contact</a></li>
                     <li><a href="#package">Pricing</a></li>
                 </ul>
             </div>
