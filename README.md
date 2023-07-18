@@ -7,5 +7,5 @@
  # Notes
  Since this is a project that i'm doing with the requirements and tests to pass in FreeCodeCamp, some of the links would refer information within the static page that is yet not available or was not included in that page. I took some freedome in linking the About and Contact links on the nav-bar to the footer. 
 
- Some of the choices in the design are influenced by the test cases from the project like including a video and a form for an email address as well as the sticky header.
+ Some of the choices in the design are influenced by the test cases from the project like including a video and a form for an email address as well as the fixed navbar.
 
